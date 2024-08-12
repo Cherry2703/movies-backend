@@ -1,0 +1,57 @@
+###
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users/register/
+Content-Type: application/json
+
+{
+    "name":"RAM CHARAN TEJA",
+    "password":"RAM@123",
+    "location":"HYDERABAD"
+}
+
+
+
+###
+DELETE http://localhost:3000/users/1/
+
+###
+GET http://localhost:3000/movies/
+
+###
+GET http://localhost:3000/movies/7
+
+###
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+    "title": "Kalki",
+    "year": "2024",
+    "genre": "Adventure, Drama, Sci-Fi,Action",
+    "director": "Nelson",
+     "actors": "Prabhas,Deepika Padkone,Amithbah bachan,Rajamouli",
+     "imdbRating": "8.6"
+}
+
+###
+PUT http://localhost:3000/movies/7
+Content-Type: application/json
+
+{
+    "title": "Interstellar",
+    "year": "2014",
+    "genre": "Adventure, Drama, Sci-Fi",
+    "director": "Christopher Nolan",
+     "actors": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
+     "rating": "8.0"
+}
+
+
+
+###
+DELETE http://localhost:3000/movies/7
